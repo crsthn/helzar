@@ -12,7 +12,6 @@ export async function linkSocialAccount(provider: SocialProvider) {
     auth.api.linkSocialAccount({
       body: {
         provider,
-        headers: await headers(),
       },
       headers: await headers(),
     })

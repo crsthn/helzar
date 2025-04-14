@@ -29,7 +29,6 @@ export async function setPassword(
     auth.api.setPassword({
       body: {
         newPassword: result.data.password,
-        headers: await headers(),
       },
       headers: await headers(),
     })
